@@ -49,7 +49,13 @@ def buscar_ram_precio():
                 for clave,valor in stock.items():
                     if precio>=valor[0]:
                         print(valor)
-
+def buscar(modelo):
+    mod={}
+    if modelo in productos:
+        mod[modelo]=productos[modelo]
+        return(mod)
+    else:
+        return None
 def stock_marca():
     while True:
         nombre=input('Ingrese marca a consultar: ').capitalize()
