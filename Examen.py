@@ -17,7 +17,7 @@ stock = {'8475HD': [387990,10],
          'UWU131HD': [349990,1], 
          'FS1230HD': [249990,0], 
                  }
- # Funciones
+'''FUNCIONES'''
 def menu():
     print('***MENU PRINCIPAL***')
     print('===========================')
@@ -57,8 +57,6 @@ def stock_marca():
         total=0
         for clave,valor in productos.items():
             if valor[0]==nombre:
-                #print(valor)
-                #total=0
                 for c,v in stock.items():                
                     if c==clave:
                         total=total+v[1]
@@ -66,14 +64,14 @@ def stock_marca():
                 break 
                 
         print('el modelo no existe')       
-# NO reconoce el HP pero los demas si
+
 def eliminar_producto():
     while True:
         nombre=input('Ingrese modelo a Eliminar: ')
         for clave,valor in productos.items():
             if clave==nombre:
                 productos.pop(clave)
- #            del turistas[clave]  
+  
             print('producto eliminado con exito.')
             return
         for clave,valor in stock.items():
@@ -82,7 +80,7 @@ def eliminar_producto():
         print('producto eliminado con exito.')
         return
 print('el modelo no existe')       
-#programa principal
+'''PROGRAMA PRINCIPAL'''
 modelo='8475HD'
 while True:
     menu()
