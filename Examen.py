@@ -5,7 +5,7 @@ productos = {'8475HD': ['HP', 15.6, '8GB', 'DD', '1T', 'Intel Core i5', 'Nvidia 
              'GF75HD': ['Asus', 15.6, '8GB', 'DD', '1T', 'Intel Core i7', 'Nvidia GTX1050'],
              '123FHD': ['Acer', 14, '6GB', 'DD', '1T', 'AMD Ryzen 5', 'integrada'],
              '342FHD': ['Acer', 15.6, '8GB', 'DD', '1T', 'AMD Ryzen 7', 'Nvidia GTX1050'],
-             'UWU131HD': ['Dell', 15.6, '8GB', 'DD', '1T', 'AMD Ryzen 3', 'Nvidia GTX1050'],
+             
                            }
 stock = {'8475HD': [387990,10], 
          '2175HD': [327990,4], 
@@ -14,8 +14,7 @@ stock = {'8475HD': [387990,10],
          '123FHD': [290890,32], 
          '342FHD': [444990,7],
          'GF75HD': [749990,2], 
-         'UWU131HD': [349990,1], 
-         'FS1230HD': [249990,0], 
+         
                  }
 '''FUNCIONES'''
 def menu():
